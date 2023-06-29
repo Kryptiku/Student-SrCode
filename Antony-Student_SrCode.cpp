@@ -2,14 +2,15 @@
 #include <conio.h>
 using namespace std;
 
-struct Node
+class Node
 {
-    string name;
-    string srcode;
-    string subj;
-    string sr_code_placeholder;
-    int sr_code;
-    Node* next;
+    public:
+        string name;
+        string srcode;
+        string subj;
+        string sr_code_placeholder;
+        int sr_code;
+        Node* next;
 };
 
 Node* createNode(string name, string srcode, string subj, int sr_code)
